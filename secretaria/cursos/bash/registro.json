@@ -17,6 +17,14 @@
       "descricao": "Orion definiu e declarou vigente a matriz 1.0.0 de Bash do básico ao avançado: 10 módulos e 40 aulas, por solicitação de Bruno. Sequência fixa, sem carga horária, avanço por critérios essenciais demonstrados. Foco em Linux e automações; materiais detalhados preparados progressivamente. Nenhuma aprendizagem foi presumida.",
       "aula_id": null,
       "avaliacao_id": null
+    },
+    {
+      "id": "R0003",
+      "ocorrido_em": "2026-09-30T20:08:30-03:00",
+      "tipo": "aula_inicio",
+      "descricao": "M01-A01 aberta após publicação da matriz vigente. Introdução conceitual e questão inicial; diagnóstico local ainda não realizado. Sem avaliação ou aprovação de aprendizagem.",
+      "aula_id": "M01-A01",
+      "avaliacao_id": null
     }
   ],
   "avaliacoes": []
