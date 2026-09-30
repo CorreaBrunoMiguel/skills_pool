@@ -41,6 +41,14 @@
       "descricao": "Correção conceitual dentro de M01-A01; aguardar reformulação da relação entre Linux, terminal e Bash antes de diagnosticar o ambiente.",
       "aula_id": "M01-A01",
       "avaliacao_id": "AV0001"
+    },
+    {
+      "id": "R0006",
+      "ocorrido_em": "2026-09-30T23:17:33.688Z",
+      "tipo": "correcao",
+      "descricao": "Bruno reformulou a relação como \"meu SO é Linux e o shell do meu terminal roda em bash\". Orion precisou a terminologia: Bash é o próprio shell. Solicitado diagnóstico do shell ativo e versão instalada; nenhuma nova conclusão de aprendizagem ou aprovação.",
+      "aula_id": "M01-A01",
+      "avaliacao_id": null
     }
   ],
   "avaliacoes": [

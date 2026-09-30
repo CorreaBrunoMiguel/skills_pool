@@ -2,8 +2,8 @@
   "versao_schema": "1.0.0",
   "curso_id": "bash",
   "versao_curriculo": "1.0.0",
-  "revisao": 3,
-  "atualizado_em": "2026-09-30T23:12:25.735Z",
+  "revisao": 4,
+  "atualizado_em": "2026-09-30T23:17:33.688Z",
   "situacao": "em_andamento",
   "aula_atual": "M01-A01",
   "aulas": [
@@ -19,9 +19,9 @@
         "aplicacao",
         "verificacao"
       ],
-      "camada_atual": "fundamentacao",
-      "ultimo_ponto": "Resposta avaliada: reconhece execução por Python, mas deduz Bash a partir do Linux e confunde terminal e shell. Correção sobre interpretação da linha e passagem do caminho como argumento.",
-      "proxima_acao": "Aguardar Bruno reformular a relação entre Linux, terminal e Bash. Depois confirmar o shell ativo e a versão instalada com evidência local.",
+      "camada_atual": "aplicacao",
+      "ultimo_ponto": "Bruno reformulou: seu SO é Linux e o shell do terminal roda em Bash. Orion esclareceu que Bash é o próprio shell. Uso efetivo de Bash ainda não confirmado; solicitado diagnóstico no terminal local.",
+      "proxima_acao": "Aguardar saídas locais de ps -p \"$$\" -o comm= e bash --version. Conferir o shell ativo e a versão instalada; então completar a explicação do percurso de python arquivo.py antes de avaliar a aula.",
       "pendencias": [
         "Distinguir terminal, shell, Bash e programa externo no percurso de execução.",
         "Identificar shell ativo e versão instalada com evidência local."
