@@ -2,14 +2,14 @@
   "versao_schema": "1.0.0",
   "curso_id": "bash",
   "versao_curriculo": "1.0.0",
-  "revisao": 5,
-  "atualizado_em": "2026-09-30T23:25:35.745Z",
+  "revisao": 6,
+  "atualizado_em": "2026-09-30T23:31:41.093Z",
   "situacao": "em_andamento",
   "aula_atual": "M01-A01",
   "aulas": [
     {
       "id": "M01-A01",
-      "status": "em_reforco",
+      "status": "em_andamento",
       "conteudos_apresentados": [
         "O01"
       ],
@@ -19,15 +19,13 @@
         "aplicacao",
         "verificacao"
       ],
-      "camada_atual": "aplicacao",
-      "ultimo_ponto": "Bruno forneceu diagnóstico local: ps identificou bash na sessão e bash --version informou 5.1.16(1)-release. C02 demonstrado. Solicitada explicação própria completa do percurso de python arquivo.py para C01.",
-      "proxima_acao": "Aguardar Bruno explicar o percurso de python arquivo.py: papel do terminal, interpretação por Bash, iniciação de Python com o caminho como argumento e execução do arquivo. Avaliar C01 com essa evidência e concluir somente quando todos os critérios essenciais estiverem demonstrados.",
-      "pendencias": [
-        "Explicar com palavras próprias as funções de terminal, Bash e Python no percurso de execução de python arquivo.py."
-      ],
+      "camada_atual": "fundamentacao",
+      "ultimo_ponto": "Bruno observou que o curso está no início e a explicação anterior foi insuficiente para exigir uma defesa técnica. Declarou saber que python arquivo.py executa o código do arquivo, embora sem vocabulário preciso de compilador/interpretador. Orion reconheceu a cobrança prematura e retomou a fundamentação com explicação gradual dos papéis de terminal, Bash, comando, argumento e Python.",
+      "proxima_acao": "Aguardar dúvidas ou solicitação de continuidade sobre o mecanismo explicado. Desenvolver a aula antes de propor nova verificação; não repetir a exigência de reformulação como prova de compreensão.",
+      "pendencias": [],
       "dificuldades": [
-        "Confusão inicial entre SO, terminal e shell foi discutida; resta verificar a explicação própria do percurso de execução.",
-        "Identificação do ambiente demonstrada: Bash ativo na sessão, versão instalada 5.1.16(1)-release."
+        "Registro corrigido: as respostas iniciais não sustentam diagnóstico de dificuldade de aprendizagem após ensino; eram sondagem prévia com fundamentação insuficiente. Avaliações AV0001 e AV0002 preservadas como histórico e contextualizadas por R0009.",
+        "Diagnóstico local já apresentado: Bash ativo e versão instalada 5.1.16(1)-release. Explicação própria será verificada após a fundamentação."
       ],
       "ultima_avaliacao_id": "AV0002",
       "concluida_em": null
