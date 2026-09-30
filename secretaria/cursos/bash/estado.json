@@ -2,8 +2,8 @@
   "versao_schema": "1.0.0",
   "curso_id": "bash",
   "versao_curriculo": "1.0.0",
-  "revisao": 8,
-  "atualizado_em": "2026-09-30T23:50:04.104Z",
+  "revisao": 9,
+  "atualizado_em": "2026-09-30T23:52:42.071Z",
   "situacao": "em_andamento",
   "aula_atual": "M01-A02",
   "aulas": [
@@ -35,12 +35,18 @@
     },
     {
       "id": "M01-A02",
-      "status": "nao_iniciada",
-      "conteudos_apresentados": [],
-      "camadas_trabalhadas": [],
-      "camada_atual": null,
-      "ultimo_ponto": null,
-      "proxima_acao": "Iniciar M01-A02 — Navegação e caminhos: apresentar objetivo e contextualização do diretório de trabalho antes de propor prática.",
+      "status": "em_andamento",
+      "conteudos_apresentados": [
+        "O01"
+      ],
+      "camadas_trabalhadas": [
+        "contextualizacao",
+        "fundamentacao",
+        "demonstracao"
+      ],
+      "camada_atual": "aplicacao",
+      "ultimo_ponto": "Abertura de M01-A02. Primeiro bloco: diretório de trabalho do shell, identificação por pwd, caminho absoluto a partir de / e caminho relativo a partir do diretório atual. Demonstração hipotética em /home/bruno/estudos, sem assumir esse caminho como ambiente real. Prática de reconhecimento: solicitar saída local de pwd.",
+      "proxima_acao": "Aguardar saída de pwd de Bruno, interpretar o caminho real e continuar com listagem e navegação, prevendo caminhos antes de executar. Depois trabalhar diretório pai, pessoal e consulta à documentação. Ainda não propor avaliação de conclusão.",
       "pendencias": [],
       "dificuldades": [],
       "ultima_avaliacao_id": null,

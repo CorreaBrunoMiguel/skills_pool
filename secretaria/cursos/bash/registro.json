@@ -97,6 +97,14 @@
       "descricao": "M01-A01 concluída com avaliação AV0003 aprovada e sem pendências impeditivas. Ponto de retomada passa para M01-A02, ainda não iniciada.",
       "aula_id": "M01-A01",
       "avaliacao_id": "AV0003"
+    },
+    {
+      "id": "R0013",
+      "ocorrido_em": "2026-09-30T23:52:42.071Z",
+      "tipo": "aula_inicio",
+      "descricao": "M01-A02 iniciada após M01-A01 aprovada em AV0003. Objetivo e critérios mantidos da matriz 1.0.0. Ensino em blocos, começando por diretório de trabalho e caminhos; solicitação de pwd é prática de reconhecimento, não avaliação final. Nenhuma aprendizagem foi presumida pelo ok de Bruno.",
+      "aula_id": "M01-A02",
+      "avaliacao_id": null
     }
   ],
   "avaliacoes": [
