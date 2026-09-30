@@ -4,6 +4,17 @@ Matriz vigente **1.0.0**: 10 módulos, 40 aulas. Sem carga horária fixa; progre
 
 Objetivo: usar Bash no Linux com autonomia e criar automações legíveis, verificáveis e robustas. Bruno implementa as atividades; Orion ensina, revisa, avalia e mantém os registros.
 
+## Como acompanhar as aulas
+
+A aula acontece nesta conversa. Orion apresenta o objetivo, ensina um bloco coerente, demonstra com exemplos e dá espaço para perguntas. Depois propõe uma prática ou verificação compatível com o que foi ensinado. Uma aula pode ocupar várias mensagens e sessões.
+
+- Os arquivos em `aulas/` são materiais de apoio e revisão; sua existência não implica leitura prévia obrigatória.
+- Quando houver leitura preparatória, Orion informa explicitamente o arquivo ou trecho, o objetivo da leitura e o que fazer depois.
+- Perguntas de sondagem identificam o ponto de partida. Discussão e dúvidas durante a explicação não equivalem automaticamente a avaliação formal.
+- Antes de uma atividade avaliada, Orion indica que é uma verificação e informa evidência e critérios. Não exige uma formulação decorada; considera o raciocínio demonstrado.
+- Bruno responde, pergunta e realiza as práticas solicitadas. Não precisa atualizar secretaria, currículo ou estado.
+- Orion mantém os registros em pontos relevantes de aprendizagem e informa a conclusão da aula. Um “ok” permite continuar a conversa, mas não comprova domínio nem conclui a aula.
+
 ## Matriz curricular
 
 | Módulo | Conteúdo | Aulas |
@@ -94,7 +105,7 @@ A sequência é obrigatória. Cada aula combina explicação, demonstração, ap
 
 ## Ambiente e entregas
 
-Usaremos o Linux Mint já informado, confirmando o Bash efetivamente instalado na primeira aula. As atividades manipulam somente fixtures em pasta de laboratório. Não é necessário instalar nada antes do diagnóstico. Código avaliado fica em `atividades/<aula-id>/`; projeto final em `projetos/automacao-arquivos/`. A origem dos arquivos avaliados será registrada por commit.
+Usaremos o Linux Mint informado por Bruno. O diagnóstico local da primeira aula identificou Bash ativo e versão instalada 5.1.16(1)-release. As atividades manipulam somente fixtures em pasta de laboratório. Não é necessário instalar nada antes do diagnóstico. Código avaliado fica em `atividades/<aula-id>/`; projeto final em `projetos/automacao-arquivos/`. A origem dos arquivos avaliados será registrada por commit.
 
 ## Projeto integrador
 

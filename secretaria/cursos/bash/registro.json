@@ -73,6 +73,14 @@
       "descricao": "Bruno contestou a cobrança de explicação no início do curso, informou saber que python arquivo.py executa o código do arquivo e indicou dificuldade de vocabulário. Orion reconheceu que apenas definições breves haviam sido apresentadas e que exigiu reformulações repetidas antes de desenvolver a fundamentação. AV0001/AV0002 são preservadas, mas seus resultados de C01 devem ser lidos como sondagem prévia, sem comprovar lacuna após ensino. Aula retorna de em_reforco para em_andamento na fundamentação; pendência de prova imediata removida. Diagnóstico do ambiente permanece válido. Próxima interação acolherá dúvidas ou continuidade, sem exigir nova explicação antes de ensinar.",
       "aula_id": "M01-A01",
       "avaliacao_id": null
+    },
+    {
+      "id": "R0010",
+      "ocorrido_em": "2026-09-30T23:40:46.359Z",
+      "tipo": "correcao",
+      "descricao": "Bruno solicitou esclarecimento sobre o método e se deveria ter lido o Markdown antes de responder. Não houve leitura preparatória atribuída. Orion explicitou e registrou a condução da aula na conversa, o papel dos arquivos como apoio/revisão, a atribuição explícita de leituras quando necessárias, o ensino antes da prática avaliada e a distinção entre sondagem, dúvidas e verificação formal. README e material da aula revisados para eliminar ambiguidades e afirmação obsoleta de ausência de diagnóstico. Sem alteração curricular ou aprovação de aprendizagem.",
+      "aula_id": "M01-A01",
+      "avaliacao_id": null
     }
   ],
   "avaliacoes": [

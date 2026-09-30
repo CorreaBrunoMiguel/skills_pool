@@ -2,8 +2,8 @@
   "versao_schema": "1.0.0",
   "curso_id": "bash",
   "versao_curriculo": "1.0.0",
-  "revisao": 6,
-  "atualizado_em": "2026-09-30T23:31:41.093Z",
+  "revisao": 7,
+  "atualizado_em": "2026-09-30T23:40:46.359Z",
   "situacao": "em_andamento",
   "aula_atual": "M01-A01",
   "aulas": [
@@ -20,8 +20,8 @@
         "verificacao"
       ],
       "camada_atual": "fundamentacao",
-      "ultimo_ponto": "Bruno observou que o curso está no início e a explicação anterior foi insuficiente para exigir uma defesa técnica. Declarou saber que python arquivo.py executa o código do arquivo, embora sem vocabulário preciso de compilador/interpretador. Orion reconheceu a cobrança prematura e retomou a fundamentação com explicação gradual dos papéis de terminal, Bash, comando, argumento e Python.",
-      "proxima_acao": "Aguardar dúvidas ou solicitação de continuidade sobre o mecanismo explicado. Desenvolver a aula antes de propor nova verificação; não repetir a exigência de reformulação como prova de compreensão.",
+      "ultimo_ponto": "Discussão do percurso de python --version: Bruno atribuiu a resposta ao Bash e perguntou sobre flag versus argumento. Orion explicou que Python reconhece a opção e produz a versão; argumento, opção e flag podem descrever o mesmo elemento. Bruno pediu clareza sobre o papel do Markdown e o fluxo de aula. Método explicitado: aula na conversa, material de apoio, leituras apenas quando atribuídas e verificação anunciada após ensino.",
+      "proxima_acao": "Ao continuar, desenvolver ou esclarecer o bloco de responsabilidades entre terminal, shell e programa externo, com demonstração suficiente. Distinguir sondagem de prática e avaliação; anunciar uma verificação quando o aluno tiver recebido a fundamentação. Não presumir leitura prévia do Markdown.",
       "pendencias": [],
       "dificuldades": [
         "Registro corrigido: as respostas iniciais não sustentam diagnóstico de dificuldade de aprendizagem após ensino; eram sondagem prévia com fundamentação insuficiente. Avaliações AV0001 e AV0002 preservadas como histórico e contextualizadas por R0009.",
