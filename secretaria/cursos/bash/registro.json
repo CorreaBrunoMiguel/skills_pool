@@ -81,6 +81,22 @@
       "descricao": "Bruno solicitou esclarecimento sobre o método e se deveria ter lido o Markdown antes de responder. Não houve leitura preparatória atribuída. Orion explicitou e registrou a condução da aula na conversa, o papel dos arquivos como apoio/revisão, a atribuição explícita de leituras quando necessárias, o ensino antes da prática avaliada e a distinção entre sondagem, dúvidas e verificação formal. README e material da aula revisados para eliminar ambiguidades e afirmação obsoleta de ausência de diagnóstico. Sem alteração curricular ou aprovação de aprendizagem.",
       "aula_id": "M01-A01",
       "avaliacao_id": null
+    },
+    {
+      "id": "R0011",
+      "ocorrido_em": "2026-09-30T23:50:04.104Z",
+      "tipo": "avaliacao",
+      "descricao": "Verificação após fundamentação e demonstração: C01 e C02 demonstrados na evidência cumulativa de AV0003. Consolidadas as precisões sobre caminho como argumento e espera por entrada no programa.",
+      "aula_id": "M01-A01",
+      "avaliacao_id": "AV0003"
+    },
+    {
+      "id": "R0012",
+      "ocorrido_em": "2026-09-30T23:50:04.104Z",
+      "tipo": "aula_conclusao",
+      "descricao": "M01-A01 concluída com avaliação AV0003 aprovada e sem pendências impeditivas. Ponto de retomada passa para M01-A02, ainda não iniciada.",
+      "aula_id": "M01-A01",
+      "avaliacao_id": "AV0003"
     }
   ],
   "avaliacoes": [
@@ -137,6 +153,33 @@
       ],
       "conclusao": "reforco_necessario",
       "devolutiva": "Diagnóstico do ambiente demonstrado. Falta explicar com palavras próprias o percurso de python arquivo.py, incluindo terminal, interpretação da linha por Bash, passagem do caminho como argumento e execução por Python."
+    },
+    {
+      "id": "AV0003",
+      "aula_id": "M01-A01",
+      "versao_curriculo": "1.0.0",
+      "avaliado_em": "2026-09-30T23:50:04.104Z",
+      "avaliador": "Orion",
+      "evidencia": {
+        "tipo": "resposta_em_aula",
+        "referencia": "Work Bash, respostas e diagnóstico de Bruno em 30/09/2026; verificação final proposta após fundamentação.",
+        "commit": null,
+        "resumo": "Após a explicação sobre terminal, shell e programas externos, Bruno afirmou que outro shell também pode iniciar Python porque arquivo.py é passado como argumento ao interpretador. Descreveu que o shell inicia o interpretador, fornece arquivo.py e Python assume a execução do código. Orion precisou que o argumento é o nome/caminho e o shell continua existindo. Na verificação anunciada sobre o papel do terminal, Bruno identificou exibição de stdout e fornecimento/recebimento de stdin. Orion precisou que a leitura e eventual espera pertencem ao programa, enquanto o terminal é a interface, quando os fluxos estão conectados a ele. O diagnóstico anterior mostrou ps -p \"$$\" -o comm= retornando bash e bash --version retornando GNU Bash 5.1.16(1)-release (x86_64-pc-linux-gnu)."
+      },
+      "criterios": [
+        {
+          "criterio_id": "C01",
+          "resultado": "demonstrado",
+          "justificativa": "As respostas após fundamentação distinguem shell que inicia o comando, Python que executa o código e terminal como interface de entrada/saída. A identificação de Bash como o shell da sessão e a explicação de que outro shell pode iniciar o mesmo Python completam a distinção dos quatro papéis. Precisões de vocabulário sobre passagem do caminho, continuidade do shell e espera pela entrada foram consolidadas; detalhes de fluxos não fazem parte de um critério adicional nesta aula."
+        },
+        {
+          "criterio_id": "C02",
+          "resultado": "demonstrado",
+          "justificativa": "A evidência local fornecida identifica bash como processo do shell e versão instalada 5.1.16(1)-release, distinguindo instalação de shell ativo sem inferir a partir do SO ou apenas de SHELL."
+        }
+      ],
+      "conclusao": "aprovada",
+      "devolutiva": "M01-A01 concluída pelos dois critérios essenciais. Consolidação: o terminal oferece a interface; Bash interpreta a linha e inicia o programa; Python executa seu código e realiza suas leituras/escritas. A espera por entrada pertence ao programa. Próxima aula M01-A02, ainda não iniciada."
     }
   ]
 }
