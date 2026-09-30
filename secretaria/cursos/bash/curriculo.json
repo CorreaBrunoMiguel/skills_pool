@@ -1,0 +1,1426 @@
+{
+  "versao_schema": "1.0.0",
+  "curso_id": "bash",
+  "versao_curriculo": "1.0.0",
+  "situacao": "vigente",
+  "modulos": [
+    {
+      "id": "M01",
+      "titulo": "Fundamentos do shell e do sistema de arquivos",
+      "aulas": [
+        {
+          "id": "M01-A01",
+          "titulo": "Terminal, shell e Bash",
+          "prerequisitos": [],
+          "conteudos": [
+            "Terminal e emulador",
+            "Shell como interpretador",
+            "Bash e comandos externos",
+            "Identificação do ambiente"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Distinguir terminal, shell, Bash e programa executado, identificando o interpretador usado."
+            }
+          ],
+          "evidencia_esperada": "Explicação própria dos quatro conceitos e diagnóstico do ambiente local.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Distingue as quatro funções e explica o percurso de uma instrução até sua execução.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Identifica Bash e sua versão com evidência local, sem deduzir o shell atual apenas de SHELL.",
+              "essencial": true
+            }
+          ]
+        },
+        {
+          "id": "M01-A02",
+          "titulo": "Navegação e caminhos",
+          "prerequisitos": [
+            "M01-A01"
+          ],
+          "conteudos": [
+            "pwd, cd e ls",
+            "Caminhos absolutos e relativos",
+            "Diretório atual, pai e pessoal",
+            "Ajuda com help, man e --help"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Navegar no sistema de arquivos e resolver caminhos a partir do diretório atual."
+            }
+          ],
+          "evidencia_esperada": "Percurso em laboratório com previsão e conferência dos caminhos.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Resolve caminhos absolutos e relativos e navega para os destinos solicitados.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Usa documentação para justificar uma opção e diferencia diretório atual de diretório pessoal.",
+              "essencial": true
+            }
+          ]
+        },
+        {
+          "id": "M01-A03",
+          "titulo": "Arquivos, diretórios e links",
+          "prerequisitos": [
+            "M01-A02"
+          ],
+          "conteudos": [
+            "mkdir, cp, mv e rm",
+            "Arquivos ocultos",
+            "Links simbólicos e hard links",
+            "Operações restritas ao laboratório"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Manipular arquivos e diretórios de laboratório, explicando os efeitos sobre links."
+            }
+          ],
+          "evidencia_esperada": "Árvore de arquivos antes e depois das operações e explicação dos links.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Cria, copia e move os objetos pedidos e prevê os efeitos sobre seus caminhos.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Distingue os tipos de link e limita remoções aos alvos conferidos no laboratório.",
+              "essencial": true
+            }
+          ]
+        },
+        {
+          "id": "M01-A04",
+          "titulo": "Permissões e resolução de comandos",
+          "prerequisitos": [
+            "M01-A03"
+          ],
+          "conteudos": [
+            "chmod e permissões rwx",
+            "Permissões de diretórios",
+            "type e command -v",
+            "PATH e executáveis"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Diagnosticar permissão de acesso e resolução de um comando."
+            }
+          ],
+          "evidencia_esperada": "Diagnóstico de casos de acesso negado e comando não encontrado.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Explica rwx em arquivo e diretório e corrige o caso proposto com a permissão necessária.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Explica a busca via PATH e diferencia builtin, alias e executável externo.",
+              "essencial": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M02",
+      "titulo": "Interpretação de comandos e expansões",
+      "aulas": [
+        {
+          "id": "M02-A01",
+          "titulo": "Argumentos, aspas e escapes",
+          "prerequisitos": [
+            "M01-A04"
+          ],
+          "conteudos": [
+            "Palavras e argumentos",
+            "Aspas simples e duplas",
+            "Escape e espaços",
+            "printf"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Prever os argumentos produzidos por uma linha de comando com aspas e escapes."
+            }
+          ],
+          "evidencia_esperada": "Previsão e conferência de argumentos em exemplos, incluindo caminhos com espaços.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Prevê quantidade e conteúdo dos argumentos dos casos propostos.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Usa aspas e printf preservando espaços e caracteres literais quando exigido.",
+              "essencial": true
+            }
+          ]
+        },
+        {
+          "id": "M02-A02",
+          "titulo": "Variáveis e ambiente",
+          "prerequisitos": [
+            "M02-A01"
+          ],
+          "conteudos": [
+            "Atribuição e expansão",
+            "unset e export",
+            "Variáveis do shell e de ambiente",
+            "Processos filhos"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Explicar e verificar o alcance de uma variável no shell e em um processo filho."
+            }
+          ],
+          "evidencia_esperada": "Experimento com variável local ao shell e variável exportada.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Atribui e expande valores sem introduzir separação indevida de argumentos.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Explica a herança do ambiente e por que o filho não altera o ambiente do processo pai.",
+              "essencial": true
+            }
+          ]
+        },
+        {
+          "id": "M02-A03",
+          "titulo": "Globbing e ordem das expansões",
+          "prerequisitos": [
+            "M02-A02"
+          ],
+          "conteudos": [
+            "*, ? e classes",
+            "Expansão de chaves e til",
+            "Substituição de comando",
+            "Word splitting, globbing e opções nullglob/failglob"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Prever expansões e impedir divisão ou expansão de nomes indesejada."
+            }
+          ],
+          "evidencia_esperada": "Casos com espaços, padrões sem correspondência e saída de comando.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Distingue globbing de expressão regular e prevê as expansões dos casos propostos.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Explica word splitting e globbing e preserva valores com aspas, tratando padrões sem correspondência.",
+              "essencial": true
+            }
+          ]
+        },
+        {
+          "id": "M02-A04",
+          "titulo": "Status de saída e composição",
+          "prerequisitos": [
+            "M02-A03"
+          ],
+          "conteudos": [
+            "0 e não zero",
+            "$?",
+            "&&, || e listas",
+            "Agrupamento básico"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Controlar execução pela condição de sucesso ou falha de comandos."
+            }
+          ],
+          "evidencia_esperada": "Composição de comandos e tabela de caminhos de execução.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Prevê quais comandos executam em cada cenário e captura o status no momento correto.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Distingue status de saída de stdout e stderr e justifica o encadeamento escolhido.",
+              "essencial": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M03",
+      "titulo": "Fluxos e processamento de texto",
+      "aulas": [
+        {
+          "id": "M03-A01",
+          "titulo": "Redirecionamentos e pipelines",
+          "prerequisitos": [
+            "M02-A04"
+          ],
+          "conteudos": [
+            "stdin, stdout e stderr",
+            ">, >>, < e 2>",
+            "Ordem de redirecionamentos",
+            "Pipelines e tee"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Construir um fluxo separando dados e diagnósticos e prever seus destinos."
+            }
+          ],
+          "evidencia_esperada": "Pipeline em dados de laboratório com arquivos separados de resultado e erro.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Encaminha os três fluxos conforme solicitado e explica a ordem dos redirecionamentos.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Distingue sobrescrita de acréscimo e o fluxo transportado pelo pipe.",
+              "essencial": true
+            }
+          ]
+        },
+        {
+          "id": "M03-A02",
+          "titulo": "Busca e expressões regulares",
+          "prerequisitos": [
+            "M03-A01"
+          ],
+          "conteudos": [
+            "grep",
+            "Regex básica e estendida",
+            "Âncoras, classes e quantificadores",
+            "Busca literal e status de grep"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Selecionar linhas com busca literal e padrões regulares compatíveis com a tarefa."
+            }
+          ],
+          "evidencia_esperada": "Filtros em um log sintético com casos positivos e negativos.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Seleciona exatamente os registros pedidos e explica o padrão utilizado.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Distingue busca literal, regex e glob, e diferencia ausência de correspondência de erro.",
+              "essencial": true
+            }
+          ]
+        },
+        {
+          "id": "M03-A03",
+          "titulo": "Transformação e agregação de texto",
+          "prerequisitos": [
+            "M03-A02"
+          ],
+          "conteudos": [
+            "cut, sort, uniq e wc",
+            "sed básico",
+            "Locale e ordenação",
+            "Arquivos delimitados simples"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Transformar e agregar texto delimitado com hipóteses de formato explícitas."
+            }
+          ],
+          "evidencia_esperada": "Relatório de contagens e transformação de texto acompanhado de justificativa.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Obtém os totais e transformações esperados e explica cada etapa.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Explica por que uniq depende da disposição dos registros e declara limites do formato delimitado.",
+              "essencial": true
+            }
+          ]
+        },
+        {
+          "id": "M03-A04",
+          "titulo": "AWK para registros e campos",
+          "prerequisitos": [
+            "M03-A03"
+          ],
+          "conteudos": [
+            "Padrão e ação",
+            "Campos, FS e OFS",
+            "Acumuladores",
+            "BEGIN e END"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Produzir um resumo de registros com filtros e agregações em AWK."
+            }
+          ],
+          "evidencia_esperada": "Resumo de um arquivo simples com contagens e totais verificáveis.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Usa campos, condições e acumuladores para obter o resultado esperado.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Trata entrada vazia ou malformada conforme o contrato e explica a divisão de trabalho entre Bash e AWK.",
+              "essencial": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M04",
+      "titulo": "Programação de scripts",
+      "aulas": [
+        {
+          "id": "M04-A01",
+          "titulo": "Criação e execução de scripts",
+          "prerequisitos": [
+            "M03-A04"
+          ],
+          "conteudos": [
+            "Shebang",
+            "bash arquivo e execução direta",
+            "Permissão de execução",
+            "Comentários e organização"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Criar e executar um script identificando seu interpretador e modos de invocação."
+            }
+          ],
+          "evidencia_esperada": "Script autoral simples e demonstração dos modos de execução.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Executa o script e explica shebang e permissão de execução.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Distingue executar de carregar com source e evita invocar Bash como sh sem verificar compatibilidade.",
+              "essencial": true
+            }
+          ]
+        },
+        {
+          "id": "M04-A02",
+          "titulo": "Entrada e argumentos",
+          "prerequisitos": [
+            "M04-A01"
+          ],
+          "conteudos": [
+            "Parâmetros posicionais",
+            "\"$@\", \"$*\", $# e shift",
+            "read -r",
+            "getopts e mensagem de uso"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Receber argumentos e entrada textual preservando valores e validando o contrato."
+            }
+          ],
+          "evidencia_esperada": "Script com opções, ajuda e casos de argumento ausente ou com espaços.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Interpreta opções e preserva a separação dos argumentos com \"$@\".",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Rejeita entradas inválidas com diagnóstico e status coerentes e explica read -r.",
+              "essencial": true
+            }
+          ]
+        },
+        {
+          "id": "M04-A03",
+          "titulo": "Condições e seleção",
+          "prerequisitos": [
+            "M04-A02"
+          ],
+          "conteudos": [
+            "if, elif e else",
+            "test, [ e [[",
+            "Comparações numéricas e textuais",
+            "case"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Selecionar comportamentos por condições com a sintaxe adequada ao tipo de dado."
+            }
+          ],
+          "evidencia_esperada": "Script de decisão com tabela de cenários.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Implementa os ramos pedidos e distingue comparação numérica de comparação textual.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Explica diferenças relevantes entre [ e [[ e trata entradas vazias ou inesperadas.",
+              "essencial": true
+            }
+          ]
+        },
+        {
+          "id": "M04-A04",
+          "titulo": "Repetição e leitura de registros",
+          "prerequisitos": [
+            "M04-A03"
+          ],
+          "conteudos": [
+            "for, while e until",
+            "break e continue",
+            "while IFS= read -r",
+            "Última linha sem newline"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Percorrer argumentos e registros preservando seus limites."
+            }
+          ],
+          "evidencia_esperada": "Processamento repetido com espaços, linhas vazias e última linha sem newline.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Percorre os itens corretos sem dividir valores ou descartar registros exigidos.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Explica a condição de término e evita leitura de arquivos por for em substituição de comando.",
+              "essencial": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M05",
+      "titulo": "Estruturação e recursos de Bash",
+      "aulas": [
+        {
+          "id": "M05-A01",
+          "titulo": "Funções e escopo",
+          "prerequisitos": [
+            "M04-A04"
+          ],
+          "conteudos": [
+            "Definição e chamada",
+            "local",
+            "return e saída de dados",
+            "source e bibliotecas"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Decompor um script em funções com contratos explícitos."
+            }
+          ],
+          "evidencia_esperada": "Refatoração autoral em funções e demonstração de uma biblioteca local.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Separa responsabilidades e mantém variáveis internas locais quando necessário.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Distingue return de saída de dados e explica os efeitos de source no shell atual.",
+              "essencial": true
+            }
+          ]
+        },
+        {
+          "id": "M05-A02",
+          "titulo": "Expansão de parâmetros e aritmética",
+          "prerequisitos": [
+            "M05-A01"
+          ],
+          "conteudos": [
+            "Valores padrão e validação",
+            "Remoção e substituição de padrões",
+            "Substring e comprimento",
+            "Aritmética inteira"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Transformar valores e calcular inteiros usando recursos do Bash."
+            }
+          ],
+          "evidencia_esperada": "Casos de transformação e cálculo com valores ausentes e formatos inválidos.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Usa expansões apropriadas para produzir os resultados pedidos.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Distingue variável ausente de vazia quando necessário e valida operandos antes de calcular.",
+              "essencial": true
+            }
+          ]
+        },
+        {
+          "id": "M05-A03",
+          "titulo": "Arrays indexados e associativos",
+          "prerequisitos": [
+            "M05-A02"
+          ],
+          "conteudos": [
+            "declare -a e declare -A",
+            "Índices e chaves",
+            "\"${array[@]}\"",
+            "Iteração e mapfile"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Representar e percorrer coleções preservando cada elemento."
+            }
+          ],
+          "evidencia_esperada": "Coleção com elementos contendo espaços e mapa por chave.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Armazena e recupera elementos e percorre valores ou chaves corretamente.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Explica as expansões de arrays e confere requisitos de versão dos recursos utilizados.",
+              "essencial": true
+            }
+          ]
+        },
+        {
+          "id": "M05-A04",
+          "titulo": "Configuração e contratos de interface",
+          "prerequisitos": [
+            "M05-A03"
+          ],
+          "conteudos": [
+            "Precedência entre opções, ambiente e padrões",
+            "Validação de configuração",
+            "Separação de código e dados",
+            "Riscos de eval e source de entrada externa"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Projetar a interface de um script com configuração previsível e dados não executáveis."
+            }
+          ],
+          "evidencia_esperada": "Contrato e implementação de configuração simples com testes de precedência.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Implementa a precedência divulgada e rejeita configuração inválida.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Trata dados como dados e justifica a leitura escolhida sem eval ou source de conteúdo não confiável.",
+              "essencial": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M06",
+      "titulo": "Automação de arquivos e integração",
+      "aulas": [
+        {
+          "id": "M06-A01",
+          "titulo": "Busca e processamento de nomes",
+          "prerequisitos": [
+            "M05-A04"
+          ],
+          "conteudos": [
+            "find",
+            "-exec e terminador --",
+            "-print0 e xargs -0",
+            "Nomes com espaços, newline e hífen"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Processar conjuntos de arquivos preservando integralmente seus nomes."
+            }
+          ],
+          "evidencia_esperada": "Operação em coleção sintética com nomes adversos.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Seleciona e processa exatamente os arquivos pedidos sem fragmentar nomes.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Explica delimitação NUL, proteção de opções e limites dos pipelines orientados a linhas.",
+              "essencial": true
+            }
+          ]
+        },
+        {
+          "id": "M06-A02",
+          "titulo": "Arquivamento e integridade",
+          "prerequisitos": [
+            "M06-A01"
+          ],
+          "conteudos": [
+            "tar e compressão",
+            "Listagem e restauração em laboratório",
+            "Checksums",
+            "Cópia e verificação"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Criar e verificar um arquivo de backup e demonstrar sua restauração."
+            }
+          ],
+          "evidencia_esperada": "Backup e restauração em pasta isolada com conferência de integridade.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Cria o arquivo e restaura o conjunto esperado com conferência verificável.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Inspeciona destinos e conteúdo antes de extrair e explica o que um checksum comprova.",
+              "essencial": true
+            }
+          ]
+        },
+        {
+          "id": "M06-A03",
+          "titulo": "Bash em fluxos de dados",
+          "prerequisitos": [
+            "M06-A02"
+          ],
+          "conteudos": [
+            "Validação de arquivos de entrada",
+            "Texto delimitado, CSV e JSON",
+            "jq introdutório",
+            "Integração com Python e códigos de saída"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Orquestrar ferramentas adequadas a cada formato de dados."
+            }
+          ],
+          "evidencia_esperada": "Fluxo pequeno com JSON e CSV contendo campos entre aspas.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Encaminha JSON e CSV para parsers adequados e confere o resultado.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Explica limites de cut/AWK para CSV geral e propaga falha de uma ferramenta externa.",
+              "essencial": true
+            }
+          ]
+        },
+        {
+          "id": "M06-A04",
+          "titulo": "Integração com serviços e comandos externos",
+          "prerequisitos": [
+            "M06-A03"
+          ],
+          "conteudos": [
+            "curl introdutório",
+            "Status HTTP e status do comando",
+            "Timeouts e tentativas limitadas",
+            "Segredos e logs"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Orquestrar uma operação externa com resultados e falhas explícitos."
+            }
+          ],
+          "evidencia_esperada": "Cenários simulados de sucesso, erro HTTP e indisponibilidade.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Distingue erro de transporte de resposta HTTP e limita tempo e tentativas.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Evita exposição de segredo e justifica quando repetir uma operação é apropriado.",
+              "essencial": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M07",
+      "titulo": "Falhas, limpeza e execução previsível",
+      "aulas": [
+        {
+          "id": "M07-A01",
+          "titulo": "Tratamento explícito de falhas",
+          "prerequisitos": [
+            "M06-A04"
+          ],
+          "conteudos": [
+            "exit e propagação",
+            "pipefail e PIPESTATUS",
+            "set -e e exceções",
+            "set -u e variáveis opcionais"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Projetar o caminho de falha de um script sem depender de suposições sobre opções do shell."
+            }
+          ],
+          "evidencia_esperada": "Análise e correção de falhas em comandos e pipelines.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Captura e propaga os status relevantes com diagnóstico útil.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Explica limites de errexit e nounset nos casos propostos e justifica seu uso ou ausência.",
+              "essencial": true
+            }
+          ]
+        },
+        {
+          "id": "M07-A02",
+          "titulo": "Sinais, traps e temporários",
+          "prerequisitos": [
+            "M07-A01"
+          ],
+          "conteudos": [
+            "trap",
+            "EXIT, INT e TERM",
+            "mktemp",
+            "Limpeza e preservação do status"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Gerenciar recursos temporários e encerramento em sucesso, falha e interrupção."
+            }
+          ],
+          "evidencia_esperada": "Script interrompido em laboratório com inspeção dos temporários e status.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Cria temporários sem nome previsível e limpa os recursos sob sua responsabilidade.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Trata os cenários definidos e preserva o status relevante, reconhecendo sinais não capturáveis.",
+              "essencial": true
+            }
+          ]
+        },
+        {
+          "id": "M07-A03",
+          "titulo": "Idempotência e gravação consistente",
+          "prerequisitos": [
+            "M07-A02"
+          ],
+          "conteudos": [
+            "Pré-condições e pós-condições",
+            "Execução repetida",
+            "Arquivo temporário e rename",
+            "Limites de atomicidade"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Executar uma transformação repetidamente sem corromper a saída."
+            }
+          ],
+          "evidencia_esperada": "Duas execuções e falha simulada durante geração do resultado.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Produz o estado final esperado em repetição e evita publicar resultado parcial.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Explica as condições de uma substituição atômica e diferencia idempotência de ausência de efeitos.",
+              "essencial": true
+            }
+          ]
+        },
+        {
+          "id": "M07-A04",
+          "titulo": "Logs e observabilidade",
+          "prerequisitos": [
+            "M07-A03"
+          ],
+          "conteudos": [
+            "Níveis e contexto",
+            "stdout para dados e stderr para diagnósticos",
+            "Status final",
+            "Informação sensível"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Produzir dados e diagnósticos que permitam investigar uma execução."
+            }
+          ],
+          "evidencia_esperada": "Execuções de sucesso e falha com saída e logs inspecionáveis.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Separa resultado de diagnóstico e registra contexto suficiente para identificar a etapa que falhou.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Mantém status coerente e evita registrar credenciais ou valores sensíveis.",
+              "essencial": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M08",
+      "titulo": "Processos e recursos avançados",
+      "aulas": [
+        {
+          "id": "M08-A01",
+          "titulo": "Processos e controle de jobs",
+          "prerequisitos": [
+            "M07-A04"
+          ],
+          "conteudos": [
+            "Foreground e background",
+            "$!, jobs e wait",
+            "kill e sinais",
+            "Sessão e ciclo de vida"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Iniciar, acompanhar e aguardar processos com status verificável."
+            }
+          ],
+          "evidencia_esperada": "Experimento com processos controlados e encerramento observado.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Identifica os processos criados e aguarda o processo correto com seu status.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Distingue job do shell de processo e explica o efeito do sinal utilizado.",
+              "essencial": true
+            }
+          ]
+        },
+        {
+          "id": "M08-A02",
+          "titulo": "Subshells e substituições",
+          "prerequisitos": [
+            "M08-A01"
+          ],
+          "conteudos": [
+            "( ) e { }",
+            "Escopo em pipelines",
+            "Substituição de comando",
+            "Substituição de processo"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Prever alterações de estado e fluxos em diferentes contextos de execução."
+            }
+          ],
+          "evidencia_esperada": "Previsões e experimentos com variáveis, diretórios e pipelines.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Explica quais alterações persistem no shell atual nos cenários propostos.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Reconhece remoção de newlines finais em substituição de comando e limites de observação de falhas na substituição de processo.",
+              "essencial": true
+            }
+          ]
+        },
+        {
+          "id": "M08-A03",
+          "titulo": "Descritores e entrada multilinha",
+          "prerequisitos": [
+            "M08-A02"
+          ],
+          "conteudos": [
+            "exec e descritores adicionais",
+            "Here-document e here-string",
+            "Aspas no delimitador",
+            "Abertura e fechamento de descritores"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Construir entrada multilinha e manipular descritores com expansão controlada."
+            }
+          ],
+          "evidencia_esperada": "Experimentos de leitura e escrita com descritor adicional e here-document.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Encaminha os dados ao descritor correto e fecha recursos quando necessário.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Prevê expansões em here-document e here-string e explica o efeito das aspas no delimitador.",
+              "essencial": true
+            }
+          ]
+        },
+        {
+          "id": "M08-A04",
+          "titulo": "Concorrência e exclusão mútua",
+          "prerequisitos": [
+            "M08-A03"
+          ],
+          "conteudos": [
+            "Paralelismo limitado",
+            "wait e agregação de falhas",
+            "flock no Linux",
+            "Condições de corrida"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Executar tarefas concorrentes com limite e proteção de um recurso compartilhado."
+            }
+          ],
+          "evidencia_esperada": "Cenários de tarefas paralelas e duas instâncias competindo pelo mesmo recurso.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Respeita o limite de concorrência e detecta falhas dos processos filhos.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Protege a seção compartilhada com lock e explica a corrida evitada e limites do mecanismo.",
+              "essencial": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M09",
+      "titulo": "Qualidade, portabilidade e operação",
+      "aulas": [
+        {
+          "id": "M09-A01",
+          "titulo": "Depuração e análise estática",
+          "prerequisitos": [
+            "M08-A04"
+          ],
+          "conteudos": [
+            "bash -n",
+            "set -x e PS4",
+            "ShellCheck",
+            "Diagnóstico sem expor segredos"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Localizar e explicar defeitos sintáticos e de interpretação em scripts."
+            }
+          ],
+          "evidencia_esperada": "Revisão de script com defeitos e relatório de correções justificadas.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Usa verificação sintática e análise estática e explica os defeitos encontrados.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Distingue lint de prova de comportamento e limita tracing onde houver dados sensíveis.",
+              "essencial": true
+            }
+          ]
+        },
+        {
+          "id": "M09-A02",
+          "titulo": "Testes de comportamento",
+          "prerequisitos": [
+            "M09-A01"
+          ],
+          "conteudos": [
+            "Fixtures isoladas",
+            "Asserções de status e fluxos",
+            "Casos adversos e repetição",
+            "Injeção de falhas"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Verificar o contrato de um script por cenários reproduzíveis."
+            }
+          ],
+          "evidencia_esperada": "Testes autorais de sucesso, erro, entrada vazia e nomes adversos.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Testa saída, status e efeitos nos arquivos com expectativas independentes da implementação.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Isola fixtures, provoca uma falha real e demonstra limpeza e repetição conforme o contrato.",
+              "essencial": true
+            }
+          ]
+        },
+        {
+          "id": "M09-A03",
+          "titulo": "Compatibilidade e desempenho",
+          "prerequisitos": [
+            "M09-A02"
+          ],
+          "conteudos": [
+            "Bash versus shell POSIX",
+            "Recursos por versão",
+            "GNU versus outras implementações",
+            "Custos de processos e fronteira com Python"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Avaliar a compatibilidade e o custo de execução de uma solução."
+            }
+          ],
+          "evidencia_esperada": "Matriz de ambiente e comparação de duas estratégias para tarefa pequena.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Identifica requisitos de shell e ferramentas e confere versões do ambiente alvo.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Justifica uma escolha de implementação com medida ou mecanismo concreto e reconhece quando usar outra linguagem.",
+              "essencial": true
+            }
+          ]
+        },
+        {
+          "id": "M09-A04",
+          "titulo": "Execução não interativa e agendamento",
+          "prerequisitos": [
+            "M09-A03"
+          ],
+          "conteudos": [
+            "Ambiente de cron",
+            "Timers do systemd",
+            "PATH, diretório e locale explícitos",
+            "Logs, lock e instalação deliberada"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Preparar uma automação para execução não interativa previsível."
+            }
+          ],
+          "evidencia_esperada": "Simulação de ambiente reduzido e configuração de agendamento proposta sem instalação automática.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Executa com ambiente reduzido, caminhos e dependências definidos.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Explica o agendamento escolhido, captura falhas e evita instâncias sobrepostas conforme o contrato.",
+              "essencial": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M10",
+      "titulo": "Projeto integrador de automação",
+      "aulas": [
+        {
+          "id": "M10-A01",
+          "titulo": "Requisitos e desenho",
+          "prerequisitos": [
+            "M09-A04"
+          ],
+          "conteudos": [
+            "Automação de inventário e backup de laboratório",
+            "CLI e formatos de saída",
+            "Ameaças ao resultado e modos de falha",
+            "Plano de testes"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Definir um contrato verificável para a automação integradora."
+            }
+          ],
+          "evidencia_esperada": "Especificação autoral com entradas, saídas, limites e critérios de aceitação.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Define CLI, inventário, backup opcional e modos de falha de forma verificável.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Inclui nomes adversos, fonte vazia, reexecução, interrupção e restrição das operações ao laboratório.",
+              "essencial": true
+            }
+          ]
+        },
+        {
+          "id": "M10-A02",
+          "titulo": "Implementação modular",
+          "prerequisitos": [
+            "M10-A01"
+          ],
+          "conteudos": [
+            "Funções e dependências",
+            "Fluxo de sucesso e falha",
+            "Temporários, logs e lock",
+            "Modo de simulação antes de alterar arquivos"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Implementar o contrato do projeto com organização e efeitos controlados."
+            }
+          ],
+          "evidencia_esperada": "Código autoral versionado e execução de sucesso em fixtures.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Implementa os requisitos aprovados preservando nomes e resultados.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Valida argumentos e dependências, separa dados e logs e controla efeitos conforme a especificação.",
+              "essencial": true
+            }
+          ]
+        },
+        {
+          "id": "M10-A03",
+          "titulo": "Verificação e correção",
+          "prerequisitos": [
+            "M10-A02"
+          ],
+          "conteudos": [
+            "Testes integrados",
+            "Falhas injetadas",
+            "ShellCheck e revisão",
+            "Reexecução e restauração"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Demonstrar comportamento correto e corrigir defeitos com evidência."
+            }
+          ],
+          "evidencia_esperada": "Suíte autoral, resultados reproduzíveis e correções versionadas.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Demonstra cenários essenciais, integridade de backup/restauração e tratamento de falhas.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Explica correções e limites ainda existentes, com validação sintática e avisos de lint resolvidos ou justificados.",
+              "essencial": true
+            }
+          ]
+        },
+        {
+          "id": "M10-A04",
+          "titulo": "Entrega e defesa técnica",
+          "prerequisitos": [
+            "M10-A03"
+          ],
+          "conteudos": [
+            "README e requisitos de ambiente",
+            "Instruções reproduzíveis",
+            "Demonstração e justificativas",
+            "Limites de Bash"
+          ],
+          "objetivos": [
+            {
+              "id": "O01",
+              "descricao": "Entregar e defender uma automação reproduzível com limites explícitos."
+            }
+          ],
+          "evidencia_esperada": "Repositório, documentação e defesa por perguntas e execução.",
+          "criterios": [
+            {
+              "id": "C01",
+              "objetivo_id": "O01",
+              "descricao": "Outra execução seguindo o README reproduz o comportamento esperado no ambiente declarado.",
+              "essencial": true
+            },
+            {
+              "id": "C02",
+              "objetivo_id": "O01",
+              "descricao": "Explica as decisões de expansão, erros, processos e concorrência e justifica os limites da solução.",
+              "essencial": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -40,6 +40,11 @@ python secretaria/scripts/novo_curso.py --id bash --titulo "Bash"
 
 O segundo comando cria um curso **em planejamento**, com campos a preencher. Criar pastas não aprova o currículo nem inicia aulas. Orion executa essas ferramentas como parte da administração.
 
-## Estado inicial
+## Cursos cadastrados
 
-Modelo institucional: **1.0.0**. Nenhum curso foi iniciado ou migrado. Bash, Git e Docker são exemplos de matérias possíveis.
+Modelo institucional: **1.0.0**.
+
+- [Bash — do básico ao avançado](cursos/bash/README.md): matriz vigente 1.0.0, com 10 módulos e 40 aulas. Consulte o estado oficial para o ponto de trabalho.
+
+Nenhum curso anterior foi migrado.
+

@@ -1,0 +1,28 @@
+{
+  "versao_schema": "1.0.0",
+  "id": "bash",
+  "titulo": "Bash — do básico ao avançado",
+  "versao_modelo": "1.0.0",
+  "criado_em": "2026-09-30T23:02:40+00:00",
+  "objetivo_geral": "Usar Bash no Linux com autonomia e desenvolver automações legíveis, verificáveis e robustas para arquivos, processos e fluxos de dados.",
+  "escopo": {
+    "inclui": [
+      "Fundamentos do terminal e comandos GNU/Linux necessários ao Bash.",
+      "Expansões, aspas, redirecionamentos, pipelines, programação e estruturação de scripts.",
+      "Processamento de texto, integração com parsers e comandos externos.",
+      "Tratamento de falhas, sinais, temporários, idempotência, processos e concorrência.",
+      "Depuração, testes, portabilidade, execução não interativa e projeto integrador."
+    ],
+    "exclui": [
+      "Administração completa de sistemas, redes e segurança.",
+      "Curso completo de AWK, sed, Python, Git ou engenharia de dados.",
+      "Domínio integral de todos os recursos e extensões do Bash.",
+      "Exigência de serviços pagos ou operações sobre dados reais do usuário."
+    ]
+  },
+  "prerequisitos": [
+    "Nenhum conhecimento prévio de Bash é exigido.",
+    "Uso básico do computador e acesso a um terminal Linux."
+  ],
+  "ambiente": "Linux Mint 21.3 informado por Bruno; confirmar versão efetiva do Bash e das ferramentas na primeira aula. Laboratórios em pasta isolada de usuário comum. Git para entregas; editor de texto. Ferramentas complementares serão introduzidas apenas quando necessárias, sem exigir troca de sistema ou instalação antecipada."
+}

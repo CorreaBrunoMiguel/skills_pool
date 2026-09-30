@@ -1,0 +1,23 @@
+{
+  "versao_schema": "1.0.0",
+  "curso_id": "bash",
+  "eventos": [
+    {
+      "id": "R0001",
+      "ocorrido_em": "2026-09-30T23:02:40+00:00",
+      "tipo": "criacao",
+      "descricao": "Curso instanciado em planejamento; matriz ainda não vigente.",
+      "aula_id": null,
+      "avaliacao_id": null
+    },
+    {
+      "id": "R0002",
+      "ocorrido_em": "2026-09-30T20:06:56-03:00",
+      "tipo": "curriculo_aprovado",
+      "descricao": "Orion definiu e declarou vigente a matriz 1.0.0 de Bash do básico ao avançado: 10 módulos e 40 aulas, por solicitação de Bruno. Sequência fixa, sem carga horária, avanço por critérios essenciais demonstrados. Foco em Linux e automações; materiais detalhados preparados progressivamente. Nenhuma aprendizagem foi presumida.",
+      "aula_id": null,
+      "avaliacao_id": null
+    }
+  ],
+  "avaliacoes": []
+}

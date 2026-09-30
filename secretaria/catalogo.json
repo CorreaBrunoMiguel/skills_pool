@@ -1,5 +1,12 @@
 {
   "versao_schema": "1.0.0",
-  "atualizado_em": "2026-09-30T18:50:30-03:00",
-  "cursos": []
+  "atualizado_em": "2026-09-30T20:06:56-03:00",
+  "cursos": [
+    {
+      "id": "bash",
+      "titulo": "Bash — do básico ao avançado",
+      "pasta": "cursos/bash",
+      "administracao": "secretaria/cursos/bash"
+    }
+  ]
 }
