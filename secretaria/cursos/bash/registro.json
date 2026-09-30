@@ -49,6 +49,22 @@
       "descricao": "Bruno reformulou a relação como \"meu SO é Linux e o shell do meu terminal roda em bash\". Orion precisou a terminologia: Bash é o próprio shell. Solicitado diagnóstico do shell ativo e versão instalada; nenhuma nova conclusão de aprendizagem ou aprovação.",
       "aula_id": "M01-A01",
       "avaliacao_id": null
+    },
+    {
+      "id": "R0007",
+      "ocorrido_em": "2026-09-30T23:25:35.745Z",
+      "tipo": "avaliacao",
+      "descricao": "Diagnóstico local recebido: Bash ativo e versão instalada 5.1.16(1)-release. C02 demonstrado; C01 permanece parcial até explicação própria do percurso.",
+      "aula_id": "M01-A01",
+      "avaliacao_id": "AV0002"
+    },
+    {
+      "id": "R0008",
+      "ocorrido_em": "2026-09-30T23:25:35.745Z",
+      "tipo": "reforco",
+      "descricao": "Reforço delimitado ao percurso de execução de python arquivo.py; identificação do ambiente deixou de ser pendência. Nenhum avanço curricular.",
+      "aula_id": "M01-A01",
+      "avaliacao_id": "AV0002"
     }
   ],
   "avaliacoes": [
@@ -78,6 +94,33 @@
       ],
       "conclusao": "reforco_necessario",
       "devolutiva": "Distinguir Linux (sistema operacional), terminal (interface) e Bash (uma implementação de shell). Refinar o mecanismo: Bash inicia o interpretador com o caminho como argumento; Python abre e executa o arquivo. Solicitar reformulação conceitual antes do diagnóstico local."
+    },
+    {
+      "id": "AV0002",
+      "aula_id": "M01-A01",
+      "versao_curriculo": "1.0.0",
+      "avaliado_em": "2026-09-30T23:25:35.745Z",
+      "avaliador": "Orion",
+      "evidencia": {
+        "tipo": "resposta_em_aula",
+        "referencia": "Work Bash, respostas de Bruno de 30/09/2026 e diagnóstico local fornecido às 20:24 (-03:00).",
+        "commit": null,
+        "resumo": "Bruno inicialmente inferiu Bash a partir de Linux e perguntou se o shell encaminha arquivo.py ao Python. Depois reformulou a distinção entre SO e shell, ainda com a expressão \"shell roda em bash\". Forneceu a execução de ps -p \"$$\" -o comm= com saída bash e bash --version com GNU bash versão 5.1.16(1)-release, x86_64-pc-linux-gnu. O diagnóstico comprova Bash na sessão observada e versão instalada; ainda falta explicação própria completa dos papéis de terminal, Bash e Python no comando python arquivo.py."
+      },
+      "criterios": [
+        {
+          "criterio_id": "C01",
+          "resultado": "parcial",
+          "justificativa": "As respostas indicam reconhecimento do interpretador Python e reformulação inicial da distinção entre SO e shell, mas ainda não demonstram em explicação própria todo o percurso e as funções de terminal, Bash e programa externo."
+        },
+        {
+          "criterio_id": "C02",
+          "resultado": "demonstrado",
+          "justificativa": "A saída de ps para o PID do shell mostra bash e bash --version informa 5.1.16(1)-release. Evidência local fornecida sem deduzir o shell ativo apenas de SHELL ou do SO."
+        }
+      ],
+      "conclusao": "reforco_necessario",
+      "devolutiva": "Diagnóstico do ambiente demonstrado. Falta explicar com palavras próprias o percurso de python arquivo.py, incluindo terminal, interpretação da linha por Bash, passagem do caminho como argumento e execução por Python."
     }
   ]
 }

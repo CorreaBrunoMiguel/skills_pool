@@ -2,8 +2,8 @@
   "versao_schema": "1.0.0",
   "curso_id": "bash",
   "versao_curriculo": "1.0.0",
-  "revisao": 4,
-  "atualizado_em": "2026-09-30T23:17:33.688Z",
+  "revisao": 5,
+  "atualizado_em": "2026-09-30T23:25:35.745Z",
   "situacao": "em_andamento",
   "aula_atual": "M01-A01",
   "aulas": [
@@ -20,16 +20,16 @@
         "verificacao"
       ],
       "camada_atual": "aplicacao",
-      "ultimo_ponto": "Bruno reformulou: seu SO é Linux e o shell do terminal roda em Bash. Orion esclareceu que Bash é o próprio shell. Uso efetivo de Bash ainda não confirmado; solicitado diagnóstico no terminal local.",
-      "proxima_acao": "Aguardar saídas locais de ps -p \"$$\" -o comm= e bash --version. Conferir o shell ativo e a versão instalada; então completar a explicação do percurso de python arquivo.py antes de avaliar a aula.",
+      "ultimo_ponto": "Bruno forneceu diagnóstico local: ps identificou bash na sessão e bash --version informou 5.1.16(1)-release. C02 demonstrado. Solicitada explicação própria completa do percurso de python arquivo.py para C01.",
+      "proxima_acao": "Aguardar Bruno explicar o percurso de python arquivo.py: papel do terminal, interpretação por Bash, iniciação de Python com o caminho como argumento e execução do arquivo. Avaliar C01 com essa evidência e concluir somente quando todos os critérios essenciais estiverem demonstrados.",
       "pendencias": [
-        "Distinguir terminal, shell, Bash e programa externo no percurso de execução.",
-        "Identificar shell ativo e versão instalada com evidência local."
+        "Explicar com palavras próprias as funções de terminal, Bash e Python no percurso de execução de python arquivo.py."
       ],
       "dificuldades": [
-        "Confusão inicial entre sistema operacional, terminal e shell; execução do arquivo precisa ser descrita como responsabilidade do Python."
+        "Confusão inicial entre SO, terminal e shell foi discutida; resta verificar a explicação própria do percurso de execução.",
+        "Identificação do ambiente demonstrada: Bash ativo na sessão, versão instalada 5.1.16(1)-release."
       ],
-      "ultima_avaliacao_id": "AV0001",
+      "ultima_avaliacao_id": "AV0002",
       "concluida_em": null
     },
     {

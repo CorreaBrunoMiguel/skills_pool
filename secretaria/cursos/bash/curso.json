@@ -24,5 +24,5 @@
     "Nenhum conhecimento prévio de Bash é exigido.",
     "Uso básico do computador e acesso a um terminal Linux."
   ],
-  "ambiente": "Linux Mint 21.3 informado por Bruno; confirmar versão efetiva do Bash e das ferramentas na primeira aula. Laboratórios em pasta isolada de usuário comum. Git para entregas; editor de texto. Ferramentas complementares serão introduzidas apenas quando necessárias, sem exigir troca de sistema ou instalação antecipada."
+  "ambiente": "Linux Mint 21.3 informado por Bruno. Em 30/09/2026, diagnóstico local fornecido identificou Bash ativo na sessão e GNU Bash 5.1.16(1)-release (x86_64-pc-linux-gnu) instalado. Conferir requisitos de versão das ferramentas por aula. Laboratórios em pasta isolada de usuário comum; Git para entregas e editor de texto. Ferramentas complementares serão introduzidas apenas quando necessárias, sem exigir troca de sistema ou instalação antecipada."
 }
