@@ -25,7 +25,51 @@
       "descricao": "M01-A01 aberta após publicação da matriz vigente. Introdução conceitual e questão inicial; diagnóstico local ainda não realizado. Sem avaliação ou aprovação de aprendizagem.",
       "aula_id": "M01-A01",
       "avaliacao_id": null
+    },
+    {
+      "id": "R0004",
+      "ocorrido_em": "2026-09-30T23:12:25.735Z",
+      "tipo": "avaliacao",
+      "descricao": "Avaliação inicial: C01 parcial por confusão entre terminal e shell; C02 ainda sem evidência local. Nenhuma aprovação.",
+      "aula_id": "M01-A01",
+      "avaliacao_id": "AV0001"
+    },
+    {
+      "id": "R0005",
+      "ocorrido_em": "2026-09-30T23:12:25.735Z",
+      "tipo": "reforco",
+      "descricao": "Correção conceitual dentro de M01-A01; aguardar reformulação da relação entre Linux, terminal e Bash antes de diagnosticar o ambiente.",
+      "aula_id": "M01-A01",
+      "avaliacao_id": "AV0001"
     }
   ],
-  "avaliacoes": []
+  "avaliacoes": [
+    {
+      "id": "AV0001",
+      "aula_id": "M01-A01",
+      "versao_curriculo": "1.0.0",
+      "avaliado_em": "2026-09-30T23:12:25.735Z",
+      "avaliador": "Orion",
+      "evidencia": {
+        "tipo": "resposta_em_aula",
+        "referencia": "Work Bash, resposta de Bruno em 30/09/2026 à pergunta sobre python arquivo.py.",
+        "commit": null,
+        "resumo": "Bruno afirmou que, por usar Linux, seu terminal é Bash, e perguntou se Bash encaminha arquivo.py a um interpretador Python. Reconheceu a execução por Python, mas confundiu sistema operacional, terminal e shell. Não apresentou diagnóstico do shell ativo nem versão instalada."
+      },
+      "criterios": [
+        {
+          "criterio_id": "C01",
+          "resultado": "parcial",
+          "justificativa": "Reconhece o papel do interpretador Python, mas confunde terminal com Bash e deduz o shell a partir do sistema operacional. Precisa explicar que Bash interpreta a linha, inicia Python e fornece o caminho como argumento."
+        },
+        {
+          "criterio_id": "C02",
+          "resultado": "nao_demonstrado",
+          "justificativa": "Nenhuma evidência local do shell ativo ou da versão instalada foi fornecida. Usar Linux não comprova uso de Bash."
+        }
+      ],
+      "conclusao": "reforco_necessario",
+      "devolutiva": "Distinguir Linux (sistema operacional), terminal (interface) e Bash (uma implementação de shell). Refinar o mecanismo: Bash inicia o interpretador com o caminho como argumento; Python abre e executa o arquivo. Solicitar reformulação conceitual antes do diagnóstico local."
+    }
+  ]
 }
