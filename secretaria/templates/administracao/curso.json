@@ -1,0 +1,14 @@
+{
+  "versao_schema": "1.0.0",
+  "id": "curso-exemplo",
+  "titulo": "Curso de exemplo",
+  "versao_modelo": "1.0.0",
+  "criado_em": "2026-09-30T18:50:30-03:00",
+  "objetivo_geral": "PREENCHER: finalidade e capacidade esperada ao concluir.",
+  "escopo": {
+    "inclui": ["PREENCHER: conteúdos e capacidades incluídos."],
+    "exclui": ["PREENCHER: limites do curso."]
+  },
+  "prerequisitos": ["PREENCHER: conhecimentos necessários ou declarar que não existem."],
+  "ambiente": "PREENCHER: ferramentas e condições necessárias."
+}

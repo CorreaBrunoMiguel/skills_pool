@@ -1,0 +1,24 @@
+{
+  "versao_schema": "1.0.0",
+  "curso_id": "curso-exemplo",
+  "versao_curriculo": "1.0.0",
+  "revisao": 1,
+  "atualizado_em": "2026-09-30T18:50:30-03:00",
+  "situacao": "planejado",
+  "aula_atual": "M01-A01",
+  "aulas": [
+    {
+      "id": "M01-A01",
+      "status": "nao_iniciada",
+      "conteudos_apresentados": [],
+      "camadas_trabalhadas": [],
+      "camada_atual": null,
+      "ultimo_ponto": null,
+      "proxima_acao": "Concluir escopo e matriz curricular antes de iniciar aulas.",
+      "pendencias": [],
+      "dificuldades": [],
+      "ultima_avaliacao_id": null,
+      "concluida_em": null
+    }
+  ]
+}
