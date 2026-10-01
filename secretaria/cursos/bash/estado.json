@@ -2,8 +2,8 @@
   "versao_schema": "1.0.0",
   "curso_id": "bash",
   "versao_curriculo": "1.0.0",
-  "revisao": 10,
-  "atualizado_em": "2026-10-01T00:00:52.525Z",
+  "revisao": 11,
+  "atualizado_em": "2026-10-01T00:05:38.743Z",
   "situacao": "em_andamento",
   "aula_atual": "M01-A02",
   "aulas": [
@@ -46,8 +46,8 @@
         "aplicacao"
       ],
       "camada_atual": "aplicacao",
-      "ultimo_ponto": "Bruno forneceu pwd inicialmente /home/bruno; ls exibiu entradas Desktop e Área de trabalho. Após orientação de cd Desktop, mostrou /home/bruno/Desktop. Foi orientado a clonar skills_pool, entrar com cd skills_pool e conferir pwd; forneceu /home/bruno/Desktop/skills_pool, com prompt indicando main. Isso evidencia o percurso relativo até essa localização, sem confirmar versão do clone. Próximo bloco apresentado: . como diretório atual, .. como diretório pai, e composição ../..; solicitação de previsão antes de executar.",
-      "proxima_acao": "Aguardar previsão de Bruno para cd ../.. partindo de /home/bruno/Desktop/skills_pool, antes da execução. Conferir por pwd e continuar com navegação absoluta, diretório pessoal e ajuda local. Práticas em desenvolvimento; nenhuma avaliação formal de M01-A02 registrada.",
+      "ultimo_ponto": "Bruno previu /home/bruno como destino de cd ../.. partindo de /home/bruno/Desktop/skills_pool e confirmou com cd ../.. && pwd, saída /home/bruno. Foi explicada a diferença entre diretório atual e pessoal. pwd mostrou /home/bruno; a primeira tentativa printf com SHOME exibiu texto literal. Após correção de S para $, printf com \"$HOME\" mostrou /home/bruno. Digitação corrigida sem presumir lacuna de domínio. Próxima prática usa caminho absoluto para a pasta do repositório e compara pwd a HOME.",
+      "proxima_acao": "Aguardar saídas de cd /home/bruno/Desktop/skills_pool seguido de pwd e printf com \"$HOME\". Verificar que o diretório de trabalho mudou e HOME permaneceu /home/bruno. Depois ensinar retorno à pasta pessoal e consulta à ajuda do builtin cd antes da avaliação formal.",
       "pendencias": [],
       "dificuldades": [],
       "ultima_avaliacao_id": null,
